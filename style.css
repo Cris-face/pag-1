@@ -1,0 +1,26 @@
+header{
+    background-color:rgb(225, 37, 26) ;
+    padding-top: 10px;
+}
+
+.menu-content{
+    max-width: 900px;
+    margin: auto;
+}
+
+.nav-bg-color{
+    background-color:rgb(225, 37, 26) ;
+}
+
+.color-white{
+    color: #fff;
+}
+
+.hover-item:hover{
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.hero-container{
+    height: 85vh;
+    background-color: rgb(225, 37, 26) ;
+}
