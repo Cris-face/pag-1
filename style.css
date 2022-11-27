@@ -1,26 +1,86 @@
-header{
-    background-color:rgb(225, 37, 26) ;
+/*
+ * Globals
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@600&family=Poppins:ital,wght@0,700;0,800;0,900;1,300;1,400&family=Varela&display=swap');
+
+
+/* 
+ * Section of header
+ */
+
+header {
+    background-color: rgb(225, 37, 26);
     padding-top: 10px;
 }
 
-.menu-content{
+.menu-content {
     max-width: 900px;
     margin: auto;
 }
 
-.nav-bg-color{
-    background-color:rgb(225, 37, 26) ;
+.nav-bg-color {
+    background-color: rgb(225, 37, 26);
 }
 
-.color-white{
+.txt-color {
+    color: rgb(240, 240, 240) !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, .5);
+    border-bottom: .25rem solid transparent;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+
+/*
+ * Section of Hero
+ */
+
+.hero-container {
+    height: 85vh;
+    background-color: rgb(225, 37, 26);
+
+}
+
+.hero {
+    height: 100%;
+    margin: auto;
+    padding: 0 11px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.title-hero{
+    grid-column: 1 / 6;
+    grid-row: 3 / 5;
+}
+
+.txt-title{
+    font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
     color: #fff;
 }
 
-.hover-item:hover{
-    color: rgba(255, 255, 255, 0.6) !important;
+.txt-title span{
+    color: #041e41;
 }
 
-.hero-container{
-    height: 85vh;
-    background-color: rgb(225, 37, 26) ;
+.txt-p{
+    color: rgba(255, 255, 255, 0.886);
+}
+
+.img-hero{
+    width: 450px;
+    grid-column: 6 / 11;
+    grid-row: 2 / 5;
+}
+.img-hero img{
+    width: 100%;
 }
