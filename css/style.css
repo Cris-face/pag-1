@@ -1,0 +1,140 @@
+/*
+ * Globals
+ */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@600&family=Poppins:ital,wght@0,700;0,800;0,900;1,300;1,400&family=Varela&display=swap');
+
+:root {
+    /*ligth mode*/
+    --main-bg-color-light: rgb(225, 37, 27);
+    --second-bg-color-ligth: rgb(255, 251, 244);
+    --btn-color-ligth: rgb(0, 27, 72);
+    --txt-tilte: rgb(255, 255, 255);
+
+    /*Dar mode*/
+    --main-bg-color-dark: rgb(0, 27, 72);
+    --second-bg-color-dark: rgb(247, 247, 247);
+    --btn-color-dark: rgb(225, 37, 27);
+}
+
+.oscuro{ 
+    --main-bg-color-light: rgb(0, 27, 72);
+    --second-bg-color-ligth: rgb(255, 251, 244);
+    --btn-color-ligth: rgb(225, 37, 27);
+}
+
+/* 
+ * Section of header
+ */
+
+header {
+    background-color: var(--main-bg-color-light);
+    padding-top: 10px;
+}
+
+.menu-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.nav-bg-color {
+    background-color: var(--main-bg-color-light);
+}
+
+.txt-color {
+    color: var(--second-bg-color-ligth) !important;
+}
+
+.nav-link {
+    color: var(--second-bg-color-ligth) !important;
+    border-bottom: .25rem solid transparent;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: var(--txt-tilte) !important;
+    border-bottom-color: var(--txt-tilte);
+}
+
+
+/*
+ * Section of Hero
+ */
+
+.hero-container {
+    height: 85vh;
+    background-color: var(--main-bg-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero {
+    height: 100%;
+    margin: auto;
+    padding: 0 11px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.title-hero {
+    grid-column: 1 / 6;
+    grid-row: 3 / 5;
+}
+
+.txt-title {
+    font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
+    color: var(--txt-tilte);
+}
+
+.txt-title span {
+    color: var(--btn-color-ligth);
+}
+
+.txt-p {
+    color: var(--second-bg-color-ligth);
+    line-height: 15px;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-hero {
+    display: block;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: var(--btn-color-ligth);
+    color:var(--second-bg-color-ligth);
+    transition: .3s;
+}
+
+.btn-hero:active {}
+
+.img-hero {
+    width: 450px;
+    grid-column: 6 / 11;
+    grid-row: 2 / 5;
+}
+
+.img-hero img {
+    width: 100%;
+}
+
+.btn-mode{
+    width: 24px;
+    border-radius: 50%;
+    background-color: var(--btn-color-ligth);
+}
+
+.moon{
+    width: 18px;
+    margin: 3px ;
+}
+/*prueba de dark mode*/
