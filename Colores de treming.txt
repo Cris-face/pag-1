@@ -7,4 +7,4 @@
 | Color-2 gris -----| rgb(247, 247,247) --| #f7f7f7 |               
 |___________________________________________________|
 
-paleta de colores para la pagina
+paleta de colores para la pagina de treming
