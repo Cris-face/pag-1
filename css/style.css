@@ -11,6 +11,7 @@
     --second-bg-color-ligth: rgb(255, 251, 244);
     --btn-color-ligth: rgb(0, 27, 72);
     --txt-tilte: rgb(255, 255, 255);
+    --bg-img: url("../img/hero1.png");
 }
 
 
@@ -21,6 +22,7 @@
     --main-bg-color-light: rgb(0, 27, 72);
     --second-bg-color-ligth: rgb(255, 251, 244);
     --btn-color-ligth: rgb(225, 37, 27);
+    --bg-img: url("../img/hero2.png");
 }
 
 
@@ -32,11 +34,14 @@
  */
 
  header {
-    background-color: var(--main-bg-color-light);
+    background-color: transparent !important;
 }
-
+.header .navbar {
+    background-color: transparent !important;
+  }
 .nav-bg-color {
     background-color: var(--main-bg-color-light);
+    background-color: transparent !important;
 }
 
 .txt-color {
@@ -63,6 +68,10 @@
 
 .hero-container {
     height: 100vh;
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100vh;
     background-color: var(--main-bg-color-light);
     display: flex;
     justify-content: center;
