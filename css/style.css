@@ -6,25 +6,29 @@
 
 /*ligth mode*/
 :root {
-    --main-bg-color-light: rgb(225, 37, 27);
-    --second-bg-color-ligth: rgb(255, 251, 244);
-    --btn-color-ligth: rgb(0, 27, 72);
-    --txt-tilte: rgb(255, 255, 255);
-    --txt-color: rgb(220, 220, 220);
+    --color-main: rgb(225, 37, 27);
+    --color-2: rgb(0, 27, 72);
+    --color-3: rgb(255, 251, 244);
+    --color-4: rgb(255, 255, 255);
+    --color-5: rgb(220, 220, 220);
+
+    --btn-color: rgb(0, 27, 72);
+    --btn-h: rgb(226, 53, 44);
     --bg-img: url("../img/hero1.png");
+    --icon: url("../img/moon.png");
 }
 
 
 
 /* Dark mode*/
 .oscuro {
-    --main-bg-color-light: rgb(0, 27, 72);
-    --second-bg-color-ligth: rgb(255, 251, 244);
-    --btn-color-ligth: rgb(225, 37, 27);
+    --color-main: rgb(6, 6, 6);
+    --color-2: rgb(225, 37, 27);
+
+    --btn-color:rgb(25, 25, 25);
+    --btn-h:  rgb(225, 37, 27);
     --bg-img: url("../img/hero2.png");
 }
-
-
 
 
 
@@ -41,27 +45,34 @@ header {
 }
 
 .navbar-collapse {
-    background-color: transparent !important;
+    background-color: var(--color-main);
+}
+
+.navbar-nav a {
+    text-align: center;
 }
 
 .nav-bg-color {
     background-color: transparent !important;
 }
 
+
+
 .txt-color {
-    color: var(--second-bg-color-ligth) !important;
+    color: var(--color-5) !important;
+    font-size: 30px !important
 }
 
 .nav-link {
     padding: 0 0 5px 0 !important;
-    color: var(--txt-color) !important;
+    color: var(--color-5) !important;
     border-bottom: 2px solid transparent;
     transition: 0.4s !important;
 }
 
 .nav-link:hover {
-    color: var(--txt-tilte) !important;
-    border-bottom-color: var(--txt-tilte);
+    color: var(--color-4) !important;
+    border-bottom-color: var(--color-4);
 }
 
 
@@ -76,7 +87,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100vh;
-    background-color: var(--main-bg-color-light);
+    background-color: var(--color-main);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,15 +112,15 @@ header {
 .txt-title {
     font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    color: var(--txt-tilte);
+    color: var(--color-4);
 }
 
 .txt-title span {
-    color: var(--btn-color-ligth);
+    color: var(--color-2);
 }
 
 .txt-p {
-    color: var(--second-bg-color-ligth);
+    color: var(--color-5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     line-height: 15px;
@@ -130,14 +141,18 @@ header {
     font-size: 10px;
     font-weight: 500;
     cursor: pointer;
-    background-color: var(--btn-color-ligth);
-    color: var(--second-bg-color-ligth);
-    border: 3px solid transparent;
+    background-color: var(--btn-color);
+    color: var(--color-5);
+    border: 2px solid transparent;
     transition: .3s;
 }
 
+.btn-hero:hover {
+    background-color: var(--btn-h);
+}
+
 .btn-hero:active {
-    border-color: var(--second-bg-color-ligth);
+    border-color: var(--color-5);
 }
 
 .img-hero {
@@ -145,14 +160,15 @@ header {
 }
 
 .btn-mode {
-    width: 24px;
+    padding: 3px;
     border-radius: 50%;
-    background-color: var(--btn-color-ligth);
+    background-color: var(--color-2);
 }
 
 .moon {
+    display: block;
     width: 18px;
-    margin: 3px;
+    margin: auto;
 }
 
 
@@ -165,13 +181,18 @@ header {
     /* 
  *       Section of header
  */
+
+    .navbar-collapse {
+        background-color: transparent !important;
+    }
+
     .menu-content {
         max-width: 1000px;
         margin: auto;
     }
 
     .txt-color {
-        font-size: 13px !important;
+        font-size: 15px !important;
     }
 
     /*
@@ -196,7 +217,7 @@ header {
         text-align: start;
         font-size: 19px;
         line-height: 19px;
-        color: var(--txt-color);
+        color: var(--color-5);
     }
 
     .btn-container {
