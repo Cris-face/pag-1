@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <header class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark menu-content nav-bg-color">
       <div class="container-fluid">
@@ -78,11 +79,19 @@
         <img class="user-select-none" src="img/hero.png" alt="image hero">
       </div>
     </div>
-    <div type="button" class="btn-mode position-absolute top-50 end-0 translate-middle-y" onclick="cambiarModo()">
-      <img src="img/moon.png" alt="icon-mode" class="moon">
-    </div>
   </section>
 
+  <!--button dark-mode-->
+  <div type="button" class="btn-mode position-fixed top-50 end-0 translate-middle-y" onclick="cambiarModo()">
+    <img src="img/moon-fill.svg" alt="icon-mode" class="moon" id="moon">
+    <img src="img/sun-fill.svg" alt="icon-mode" class="sun" id="sun">
+  </div>
+
+
+  
+
+
+  
 
   <!-- SECCION SERVICES-->
  

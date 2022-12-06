@@ -11,6 +11,8 @@
     --color-3: rgb(255, 251, 244);
     --color-4: rgb(255, 255, 255);
     --color-5: rgb(220, 220, 220);
+    --border-boton: rgb(0, 27, 72);
+    --border-link: rgb(255, 255, 255);
 
     --btn-color: rgb(0, 27, 72);
     --btn-h: rgb(226, 53, 44);
@@ -24,12 +26,14 @@
 .oscuro {
     --color-main: rgb(6, 6, 6);
     --color-2: rgb(225, 37, 27);
+    --border-boton: rgb(225, 37, 27);
+    --border-link: rgb(225, 37, 27);
 
-    --btn-color:rgb(25, 25, 25);
-    --btn-h:  rgb(225, 37, 27);
+    --btn-color: rgb(25, 25, 25);
+    --btn-h: rgb(225, 37, 27);
     --bg-img: url("../img/hero2.png");
+    --icon: url("../img/sun.svg");
 }
-
 
 
 /*
@@ -66,13 +70,13 @@ header {
 .nav-link {
     padding: 0 0 5px 0 !important;
     color: var(--color-5) !important;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: 0.4s !important;
 }
 
 .nav-link:hover {
     color: var(--color-4) !important;
-    border-bottom-color: var(--color-4);
+    border-bottom-color: var(--border-link);
 }
 
 
@@ -144,11 +148,13 @@ header {
     background-color: var(--btn-color);
     color: var(--color-5);
     border: 2px solid transparent;
+    border-color: var(--border-boton);
     transition: .3s;
 }
 
 .btn-hero:hover {
     background-color: var(--btn-h);
+    border-color: var(--btn-h);
 }
 
 .btn-hero:active {
@@ -169,6 +175,14 @@ header {
     display: block;
     width: 18px;
     margin: auto;
+    filter: invert(1);
+}
+
+.sun {
+    display: none;
+    width: 18px;
+    margin: auto;
+    filter: invert(1);
 }
 
 
