@@ -176,6 +176,7 @@ header {
     width: 18px;
     margin: auto;
     filter: invert(1);
+    transition: 0.4;
 }
 
 .sun {
@@ -183,6 +184,7 @@ header {
     width: 18px;
     margin: auto;
     filter: invert(1);
+    transition: 0.4;
 }
 
 
