@@ -112,7 +112,7 @@ header {
 
 .txt-color {
     color: var(--color-5) !important;
-    font-size: 20px !important
+    font-size: 25px !important
 }
 
 .nav-link {
@@ -241,6 +241,7 @@ header {
 
 .section-odoo {
     width: 100%;
+    padding: 2.5rem 0 !important;
     background-color: var(--color-odoo-bg);
 }
 
@@ -280,17 +281,128 @@ header {
     background-color: var(--color-gray) !important;
 }
 
+/********************** section busines ********************* */
+
+.section-busines {
+    width: 100%;
+     background-color: var(--color-odoo-bg);
+    padding: 3em 0;
+}
+
+.main-busines {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 11px;
+}
+
+.img-bus {
+    display: none;
+}
+
+.busines-content {
+    width: 100%;
+}
+
+.title-busines {
+    text-align: center;
+}
+
+.card {
+    background-color: var(--color-6) !important;
+    border-color: var(--color-2) !important;
+}
+
+.p-busines {
+    color: var(--color-gray);
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+
+.box-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.box {
+    width: 100%;
+    height: 110px;
+    background-color: var(--color-bg-footer);
+    border-radius: 15px;
+    padding: 1.5em;
+    margin: 1rem 0;
+}
+
+.one {
+    grid-row: 1 / 2;
+    grid-column: 1/ 9;
+}
+
+.two {
+    grid-row: 2 / 3;
+    grid-column: 1/ 9;
+}
+
+.three {
+    grid-row: 3 / 4;
+    grid-column: 1/ 9;
+}
+
+.four {
+    grid-row: 4 / 5;
+    grid-column: 1/ 9;
+}
+
+.box-letter {
+    color: var(--c);
+    text-align: center;
+}
+
+.b-l-t {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-4);
+}
+
+.b-l-p {
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-5);
+}
+
+/********************** Section of logo ********************* */
+.section-brands{
+    padding: 2.5rem 0 !important;
+
+}
+.celda {
+    background-color: transparent;
+    box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
+    overflow: hidden;
+    height: 45px;
+    margin: 4px;
+    transition: all .1.5s ease;
+}
+
+.efecto:hover {
+    border-bottom: 3px solid rgba(165, 165, 165, 0.535);
+    cursor: pointer;
+}
+
 /* *********************** Section of asked ******************************** */
 
 .section-asked {
     max-width: 1000px;
     margin: auto;
-    padding: 0 11px;
-
-
-    --color-1: rgb(17, 1, 1);
-    --color-2: rgb(20, 1, 1);
-    --color-3: rgb(17, 1, 1);
+    padding: 2.5em 11px;
 }
 
 .asked-h5 {
@@ -425,6 +537,13 @@ header {
 
 @media (min-width:500px) {
 
+    /* ***** section of header ************* */
+
+    .txt-color {
+        color: var(--color-5) !important;
+        font-size: 18px !important
+    }
+
     .hero-container {
         height: 100vh;
         background-image: var(--bg-img);
@@ -473,6 +592,66 @@ header {
     .btn-container {
         justify-content: center;
         flex-direction: row;
+    }
+
+    /* ************* section of business ***************** */
+
+    .box-container {
+        max-width: 900px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(11, 1fr);
+        margin: 2rem auto;
+    }
+
+    .card {
+        max-width: 700px !important;
+    }
+
+
+    .box {
+        width: 100%;
+        height: 110px;
+        background-color: var(--color-bg-footer);
+        border-radius: 15px;
+        padding: 1.5em;
+    }
+
+    .one {
+        grid-row: 1 / 2;
+        grid-column: 2/ 6;
+    }
+
+    .two {
+        grid-row: 1 / 2;
+        grid-column: 7 / 11;
+    }
+
+    .three {
+        grid-row: 2 / 3;
+        grid-column: 2 / 6;
+    }
+
+    .four {
+        grid-row: 2 / 3;
+        grid-column: 7 / 11;
+    }
+
+    .box-letter {
+        color: var(--c);
+        text-align: center;
+    }
+
+    .b-l-t {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--color-4);
+    }
+
+    .b-l-p {
+        font-size: 12px;
+        line-height: 12px;
+        color: var(--color-5);
     }
 
     /* ******************* section footer ************************** */
@@ -569,84 +748,81 @@ header {
     }
 
     /********************** section busines ********************* */
-
-    .section-busines {
-        width: 100%;
-        background-color: var(--color-odoo-bg);
-    }
-
     .main-busines {
-        max-width: 1000px;
-        margin: auto;
-        display: flex;
-        padding: 0 11px;
+        flex-direction: row;
     }
 
-    .busines-content {
-        padding: 0 11px;
-        width: 50%;
+    .title-busines {
+        text-align: start;
+    }
+
+    .btn-business{
+        display: none;
     }
 
     .p-busines {
-        color: var(--color-gray);
-        font-size: 15px;
+        display: block;
+        text-align: start;
     }
 
     .box-container {
-        width: 100%;
-        display: grid;
         grid-template-rows: repeat(8, 1fr);
         grid-template-columns: repeat(8, 1fr);
     }
 
-    .box {
-        width: 218px;
-        height: 110px;
-        background-color: var(--color-bg-footer);
-        border-radius: 15px;
-        padding: 1.5em;
+    .img-bus {
+        display: inline-block;
     }
 
-    .one{
+    .box {
+        width: 218px;
+    }
+
+    .one {
         grid-row: 1 / 5;
         grid-column: 1 / 5;
         margin: 0 7px 7px 0;
     }
 
-    .two{
+    .two {
         grid-row: 1 / 5;
         grid-column: 5 / 9;
         margin: 0 0 7px 7px;
     }
 
-    .three{
+    .three {
         grid-row: 5 / 9;
         grid-column: 1 / 5;
         margin: 7px 7px 0 0;
     }
 
-    .four{
+    .four {
         grid-row: 5 / 9;
         grid-column: 5 / 9;
         margin: 7px 0 0 7px;
     }
 
-    .box-letter{
-        color: var(--c);
-        text-align: center;
+    /********************** Section of logo ********************* */
+
+    /* .celda {
+        background-color: transparent;
+        box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
+        -webkit-box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
+        -moz-box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
+        overflow: hidden;
+        height: 45px;
+        margin: 4px;
+        transition: all .1.5s ease;
     }
 
-    .b-l-t{
-        font-size: 30px;
-        font-weight: 700;
-        color: var(--color-4);
-    }
+    .efecto:hover {
+        border-bottom: 3px solid rgba(165, 165, 165, 0.535);
+        cursor: pointer;
+    } */
 
-    .b-l-p{
-        font-size: 12px;
-        line-height: 12px;
-        color: var(--color-5);
-    }
+
+
+
 
     /* ************************ section footer ******************************** */
 
@@ -693,7 +869,9 @@ header {
         text-align: center;
     }
 
+
 }
+
 
 
 

@@ -22,7 +22,7 @@ function cambiarModo() {
 const navEl = document.querySelector('.menu');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 56) {
+  if (window.scrollY > 110) {
     navEl.classList.add('toggle-bg')
   }
   else {
