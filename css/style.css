@@ -28,6 +28,7 @@
     --color-gray: rgb(58, 57, 57);
     --color-odoo-bg: rgb(247, 247, 247);
     --color-bg-footer: rgb(0, 27, 72);
+    --color-services:  rgb(255, 255, 255);
 
     --btn-mode-color: rgb(6, 6, 6);
     --btn-color: rgb(0, 27, 72);
@@ -39,7 +40,7 @@
 
 
 /* ******************** mode dark ******************* */
-.oscuro {
+.dark-mode {
     --color-main: rgb(6, 6, 6);
     --color-2: rgb(225, 37, 27);
     --color-4: rgb(217, 213, 213);
@@ -52,9 +53,10 @@
     --bg-ask: rgb(15, 15, 15);
 
     --color-black: rgb(217, 213, 213);
-    --color-gray: rgb(167, 165, 165);
+    --color-gray: rgb(165, 165, 167);
     --color-odoo-bg: rgb(25, 25, 25);
     --color-bg-footer: rgb(6, 6, 6);
+    --color-services:  rgb(15, 15, 15);
 
     --btn-mode-color: rgb(9, 3, 174);
     --btn-color: rgb(25, 25, 25);
@@ -188,7 +190,7 @@ header {
     padding: 8px 20px;
     margin-right: 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     background-color: var(--btn-color);
@@ -218,6 +220,7 @@ header {
     padding: 5px;
     border-radius: 50%;
     background-color: var(--btn-mode-color);
+    z-index: 20000 !important;
 }
 
 .moon {
@@ -281,11 +284,141 @@ header {
     background-color: var(--color-gray) !important;
 }
 
+/* ******************** Section Services ********************* */
+.section-services {
+    width: 100%;
+    padding: 3.5em 0;
+}
+
+.services-container{
+    padding: 0 11px;
+}
+
+.feature-box-1 {
+    padding: 32px;
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+    margin: 25px 0;
+    background-color: var(--color-services);
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    top: 0;
+}
+
+.feature-box-1 * {
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+}
+
+.feature-box-1 .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: var(--body-bg);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 42px;
+    font-size: 27px;
+}
+
+.feature-box-1 .icon i {
+    line-height: 70px;
+}
+
+.feature-box-1 h5 {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.feature-box-1 p {
+    margin: 0;
+    color: var(--color-gray);
+}
+
+.feature-box-1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    border-radius: 10px;
+    width: 0;
+    background: var(--color-bg-footer);
+    z-index: -1;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+}
+
+.feature-box-1:hover {
+    top: -5px;
+}
+
+.feature-box-1:hover h5 {
+    color: #ffffff;
+}
+
+.feature-box-1:hover p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.feature-box-1:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    left: 0;
+    right: auto;
+}
+
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-title {
+    padding-bottom: 45px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    color: #20247b;
+    font-size: 45px;
+    margin: 0 0 15px;
+    border-left: 5px solid #fc5356;
+    padding-left: 15px;
+}
+
+.icon-service {
+    --box-size: 70px;
+    width: var(--box-size);
+    height: var(--box-size);
+    padding: 10px;
+}
+
+.btn-services {
+    width: 150px;
+}
+
+.btn-primary {
+    background-color: #20247b;
+}
+
 /********************** section busines ********************* */
 
 .section-busines {
     width: 100%;
-     background-color: var(--color-odoo-bg);
+    background-color: var(--color-odoo-bg);
     padding: 3em 0;
 }
 
@@ -377,10 +510,11 @@ header {
 }
 
 /********************** Section of logo ********************* */
-.section-brands{
+.section-brands {
     padding: 2.5rem 0 !important;
 
 }
+
 .celda {
     background-color: transparent;
     box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
@@ -589,6 +723,10 @@ header {
         line-height: 15px;
     }
 
+    .btn-hero {
+        font-size: 0.9rem;
+    }
+
     .btn-container {
         justify-content: center;
         flex-direction: row;
@@ -652,6 +790,12 @@ header {
         font-size: 12px;
         line-height: 12px;
         color: var(--color-5);
+    }
+
+    /* ******************** sectio odoo ************************ */
+
+    .section-odoo {
+        padding: 0 0 2.5rem 0 !important;
     }
 
     /* ******************* section footer ************************** */
@@ -723,7 +867,7 @@ header {
     .btn-hero {
         padding: 4px 20px;
         margin-right: 5px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .img-hero {
@@ -739,6 +883,10 @@ header {
 
     /* ******************** section of Odoo ******************* */
 
+    .section-odoo {
+        padding: 2.5rem 0 !important;
+    }
+
     .carousel-i {
         height: 300px;
     }
@@ -747,16 +895,26 @@ header {
         bottom: 4rem !important;
     }
 
+    /* ******************** section services ***************** */
+    .services-container{
+        max-width: 1000px;
+        margin: auto;
+    }
+
     /********************** section busines ********************* */
     .main-busines {
         flex-direction: row;
+    }
+
+    .busines-content {
+        padding-left: 11px;
     }
 
     .title-busines {
         text-align: start;
     }
 
-    .btn-business{
+    .btn-business {
         display: none;
     }
 

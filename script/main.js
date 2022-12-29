@@ -1,11 +1,11 @@
 // _________________ change color theme __________________
 
-function cambiarModo() {
+function toggleMode() {
   var cuerpoweb = document.body;
   var icon = document.getElementById("sun");
   var icon2 = document.getElementById("moon");
 
-  if (cuerpoweb = cuerpoweb.classList.toggle("oscuro")) {
+  if (cuerpoweb = cuerpoweb.classList.toggle("dark-mode")) {
     icon.style.display = 'block';
     icon2.style.display = 'none';
   }

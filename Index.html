@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link txt-color hover-item ms-2 me-2 mt-2" href="#">Services</a>
+              <a class="nav-link txt-color hover-item ms-2 me-2 mt-2" href="#section-services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link txt-color hover-item ms-2 me-2 mt-2" href="#">Work</a>
@@ -116,6 +116,44 @@
     </div>
   </section>
 
+
+
+  <!-- ********************** SECTION SERVICES ********************** -->
+  <section class="section-services" id="section-services">
+    <div class="services-container">
+      <div class="row  text-center" id="secService">
+        <h1 class="title-partner mb-4">Our<span> Services</span></h1>
+        <!-- Cards -->
+        <div class="col-sm-6 col-lg-6 m-auto mt-0">
+          <div class="feature-box-1">
+            <div class="icon">
+              <img src="./img/LaptopIcon.png" alt="Icon Laptop" class=" d-inline-bloc rounde-circle mb-3 icon-service">
+            </div>
+            <div class="feature-content">
+              <h5> Odoo ERP Implementation Service</h5>
+              <p> Odoo is a suite of business apps that cover all your company needs. We are the leaders in the region,
+                whith the necessary experience to make your project a success.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Cards 2-->
+        <div class="col-sm-6 col-lg-6 m-auto mt-0">
+          <div class="feature-box-1">
+            <div class="icon">
+              <img src="./img/Contac.png" alt="Icon Laptop" class=" d-inline-bloc rounde-circle mb-3 icon-service">
+            </div>
+            <div class="feature-content">
+              <h5> Software Development As A Service</h5>
+              <p>Do you need to develop a software project? We provide you with a select team of developers with the
+                technologies that you require for your project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-hero user-select-none btn-services m-auto" type="button">Contact us</button>
+    </div>
+  </section>
+
   <!-- *************************** Business ********************-->
 
   <section class="section-busines"> <!-- centrar el costado de la img en la interfax-->
@@ -124,17 +162,18 @@
       <div class="busines-content">
         <h1 class="title-busines title-partner">"We Impove Your Business With Technology"</h1>
         <p class="mt-2 btn-business">
-          <button class="btn btn-primary m-auto d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <button class="btn-hero user-select-none m-auto d-block" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Read more
           </button>
         </p>
         <div class="collapse" id="collapseExample">
           <div class="card card-body p-busines ask-p m-auto">
             Grupo Treming is a consulting firm leader in the area of IT in Latin
-          America, founded in 2010, with the sole purpose of consolidating
-          a firm formed by highly experienced consultants, which allows us
-          to offet solutions with a high degree of specialization through the
-          business.
+            America, founded in 2010, with the sole purpose of consolidating
+            a firm formed by highly experienced consultants, which allows us
+            to offet solutions with a high degree of specialization through the
+            business.
           </div>
         </div>
         <p class="p-busines">
@@ -440,9 +479,9 @@
     </div>
   </section>
 
-  <!--button dark-mode-->
+  <!-- ******************  button dark-mode  ************************** -->
   <div type="button" class="btn-mode position-fixed top-50 end-0 translate-middle-y zindex-tooltip"
-    onclick="cambiarModo()">
+    onclick="toggleMode()">
     <img src="img/moon-fill.svg" alt="icon-mode" class="moon" id="moon">
     <img src="img/sun-fill.svg" alt="icon-mode" class="sun" id="sun">
   </div>
