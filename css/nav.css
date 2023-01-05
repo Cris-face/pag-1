@@ -1,0 +1,63 @@
+header {
+    background-color: var(--color-main) !important;
+    width: 100%;
+}
+
+.header-main .navbar {
+    background-color: var(--color-main);
+}
+
+.navbar-collapse {
+    background-color: var(--color-main);
+}
+
+.navbar-nav a {
+    text-align: center;
+}
+
+.nav-bg-color {
+    background-color: var(--color-main);
+}
+
+.toggle-bg {
+    background-color: var(--color-main) !important;
+}
+
+
+.logo-container {
+    width: 110px !important;
+}
+
+.logo {
+    width: 100% !important;
+}
+
+.txt-color {
+    color: var(--color-5) !important;
+    font-size: 25px !important
+}
+
+.nav-link {
+    padding: 0 0 5px 0 !important;
+    color: var(--color-5) !important;
+    border-bottom: 3px solid transparent;
+    transition: 0.4s !important;
+}
+
+.nav-link:hover {
+    color: var(--color-4) !important;
+    border-bottom-color: var(--border-link);
+}
+
+.navbar-collapse {
+    background-color: transparent !important;
+}
+
+.menu-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.txt-color {
+    font-size: 15px !important;
+}

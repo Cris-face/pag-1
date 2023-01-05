@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Varela&display=swap');
 
 * {
-    font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif !important;
     ;
 }
 
@@ -25,19 +25,19 @@
 
     --color-red: rgb(225, 37, 27);
     --color-black: rgb(6, 6, 6);
-    --color-gray: rgb(58, 57, 57);
+    --color-gray: rgb(75, 74, 74);
     --color-odoo-bg: rgb(247, 247, 247);
     --color-bg-footer: rgb(0, 27, 72);
-    --color-services:  rgb(255, 255, 255);
+    --color-services: rgb(255, 255, 255);
 
     --btn-mode-color: rgb(6, 6, 6);
     --btn-color: rgb(0, 27, 72);
     --btn-h: rgb(226, 53, 44);
+    --btn-active: rgb(197, 39, 31);
     --bg-img: url("../img/hero1.png");
     --icon-plus: url("../img/plus1.png");
-    --icon-minus: url("../img/minus1.png");
+    --icon-minus: url("../img/minus2.png");
 }
-
 
 /* ******************** mode dark ******************* */
 .dark-mode {
@@ -45,18 +45,19 @@
     --color-2: rgb(225, 37, 27);
     --color-4: rgb(217, 213, 213);
     --color-5: rgb(168, 165, 165);
-    --color-6: rgb(6, 6, 6);
+    --color-6: rgb(35, 35, 35);
 
     --border-boton: rgb(225, 37, 27);
     --border-link: rgb(225, 37, 27);
     --body-bg: rgb(25, 25, 25);
-    --bg-ask: rgb(15, 15, 15);
+    --bg-ask: rgb(35, 35, 35);
 
     --color-black: rgb(217, 213, 213);
-    --color-gray: rgb(165, 165, 167);
+    --color-gray: rgb(185, 185, 185);
     --color-odoo-bg: rgb(25, 25, 25);
     --color-bg-footer: rgb(6, 6, 6);
-    --color-services:  rgb(15, 15, 15);
+    --color-services: rgb(15, 15, 15);
+    --color-logo: rgb(35, 35, 35);
 
     --btn-mode-color: rgb(9, 3, 174);
     --btn-color: rgb(25, 25, 25);
@@ -65,6 +66,75 @@
     --icon-plus: url("../img/plus2.png");
     --icon-minus: url("../img/minus2.png");
 }
+
+.section-1 {
+    width: 100% !important;
+    background-color: var(--color-odoo-bg) !important;
+    padding: 3em 0 !important;
+}
+
+.section-2 {
+    width: 100% !important;
+    padding: 3em 0 !important;
+}
+
+.container-main {
+    max-width: 1000px !important;
+    margin: auto !important;
+    padding: 0 11px !important;
+}
+
+.title-section {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.title-section span {
+    color: var(--color-red);
+}
+
+.title-section-2{
+    color: var(--color-black);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.paragraph{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+.btn-treming {
+    display: block;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: var(--btn-color);
+    color: var(--color-5);
+    border-color: var(--border-boton);
+    transition: .3s;
+}
+
+.btn-treming:hover {
+    background-color: var(--btn-h);
+    border-color: var(--btn-h);
+}
+
+.btn-treming:active{
+    background-color: var(--btn-active);
+}
+
+
+
 
 body {
     background-color: var(--body-bg) !important;
@@ -183,32 +253,6 @@ header {
     flex-direction: column;
 }
 
-.btn-hero {
-    display: block;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding: 8px 20px;
-    margin-right: 5px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: var(--btn-color);
-    color: var(--color-5);
-    border: 2px solid transparent;
-    border-color: var(--border-boton);
-    transition: .3s;
-}
-
-.btn-hero:hover {
-    background-color: var(--btn-h);
-    border-color: var(--btn-h);
-}
-
-.btn-hero:active {
-    border-color: var(--color-5);
-}
-
 .img-hero {
     display: none;
 }
@@ -242,12 +286,6 @@ header {
 
 /* ******************** section of Odoo ******************* */
 
-.section-odoo {
-    width: 100%;
-    padding: 2.5rem 0 !important;
-    background-color: var(--color-odoo-bg);
-}
-
 .carousel-i {
     width: 100%;
     height: 400px;
@@ -257,20 +295,6 @@ header {
     bottom: 4rem !important;
 }
 
-.title-partner {
-    font-weight: 700;
-    font-size: 30px;
-    color: var(--color-black);
-
-}
-
-.title-partner span {
-    color: var(--color-red);
-}
-
-.p-partner {
-    color: var(--color-gray);
-}
 
 .gold-partner {
     width: 150px;
@@ -284,15 +308,13 @@ header {
     background-color: var(--color-gray) !important;
 }
 
-/* ******************** Section Services ********************* */
-.section-services {
+.sevice-row {
     width: 100%;
-    padding: 3.5em 0;
+    --bs-gutter-x: 1.5rem !important;
+    margin: auto !important;
 }
 
-.services-container{
-    padding: 0 11px;
-}
+/* ******************** Section Services ********************* */
 
 .feature-box-1 {
     padding: 32px;
@@ -317,6 +339,11 @@ header {
     transition: ease all 0.35s;
 }
 
+.service {
+    text-decoration: none;
+}
+
+
 .feature-box-1 .icon {
     width: 70px;
     height: 70px;
@@ -331,17 +358,6 @@ header {
 
 .feature-box-1 .icon i {
     line-height: 70px;
-}
-
-.feature-box-1 h5 {
-    color: var(--color-black);
-    font-weight: 600;
-    font-size: 25px;
-}
-
-.feature-box-1 p {
-    margin: 0;
-    color: var(--color-gray);
 }
 
 .feature-box-1:after {
@@ -363,6 +379,7 @@ header {
 
 .feature-box-1:hover {
     top: -5px;
+    cursor: pointer !important;
 }
 
 .feature-box-1:hover h5 {
@@ -386,28 +403,11 @@ header {
     position: relative;
 }
 
-.section-title {
-    padding-bottom: 45px;
-}
-
-.section-title h2 {
-    font-weight: 700;
-    color: #20247b;
-    font-size: 45px;
-    margin: 0 0 15px;
-    border-left: 5px solid #fc5356;
-    padding-left: 15px;
-}
-
 .icon-service {
     --box-size: 70px;
     width: var(--box-size);
     height: var(--box-size);
     padding: 10px;
-}
-
-.btn-services {
-    width: 150px;
 }
 
 .btn-primary {
@@ -416,20 +416,11 @@ header {
 
 /********************** section busines ********************* */
 
-.section-busines {
-    width: 100%;
-    background-color: var(--color-odoo-bg);
-    padding: 3em 0;
-}
-
 .main-busines {
-    max-width: 1000px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 0 11px;
 }
 
 .img-bus {
@@ -440,18 +431,12 @@ header {
     width: 100%;
 }
 
-.title-busines {
-    text-align: center;
-}
-
 .card {
     background-color: var(--color-6) !important;
     border-color: var(--color-2) !important;
 }
 
 .p-busines {
-    color: var(--color-gray);
-    font-size: 15px;
     text-align: center;
     display: none;
 }
@@ -504,17 +489,12 @@ header {
 }
 
 .b-l-p {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 15px;
+    line-height: 15px;
     color: var(--color-5);
 }
 
 /********************** Section of logo ********************* */
-.section-brands {
-    padding: 2.5rem 0 !important;
-
-}
-
 .celda {
     background-color: transparent;
     box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
@@ -531,19 +511,37 @@ header {
     cursor: pointer;
 }
 
+.box-logo {
+    background-color: var(--color-logo);
+    overflow: hidden;
+    width: 120px !important;
+    height: 60px;
+    margin: 4px .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-logo:hover {
+    background-color: #fff;
+}
+
+.box-logo>a>img {
+    filter: grayscale(100%);
+    width: 100px;
+}
+
+.box-logo>a>img:hover {
+    filter: grayscale(0%);
+}
+
+.logo-row {
+    --bs-gutter-x: 0 !important;
+    margin-top: .5rem !important;
+}
+
+
 /* *********************** Section of asked ******************************** */
-
-.section-asked {
-    max-width: 1000px;
-    margin: auto;
-    padding: 2.5em 11px;
-}
-
-.asked-h5 {
-    display: block;
-    margin: auto;
-    text-align: center;
-}
 
 .accordion-button::after {
     background-image: var(--icon-plus) !important;
@@ -554,7 +552,7 @@ header {
 }
 
 .ask-item {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-gray) !important;
 }
 
@@ -562,14 +560,139 @@ header {
     background-color: var(--color-6) !important;
 }
 
-.ask-p {
+.bg-ask {
+    background-color: var(--bg-ask) !important;
+    box-shadow: transparent !important;
+    outline: 1px;
+
+}
+
+.bg-ask:focus {
+    background-color: var(--color-main) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+/* ***************** formulario - Griselda ************************ */
+
+.container-form {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title-forany {
+    font-family: 'Poppins', Georgia, 'Times New Roman';
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.icons {
+    padding: 0 2.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.t-icon {
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.icon-letter {}
+
+.imgphone {
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+    margin-right: 12px;
+}
+
+.form-vertical {
+    width: 100%;
+
+}
+
+.form-horizontal {
+    font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 100%;
+
+
+}
+
+
+.Yourname {
+    width: 47%;
+    margin-bottom: 2%;
+
+}
+
+.Youremail {
+    width: 47%;
+    margin-bottom: 2%;
+}
+
+.Yourphone {
+    margin-top: 2%;
+}
+
+.iconos {
+    width: 69%;
+}
+
+.nam-ema {
+    flex-direction: column;
+}
+
+.input-heigth {
+    height: calc(3rem + 2px) !important;
+}
+
+.p-i {
+    padding: .50rem 0 !important;
+}
+
+.form-control {
+    border: 2px solid transparent !important;
+    background-color: var(--color-services) !important;
+}
+
+.color-input {
     color: var(--color-black) !important;
 }
 
-.bg-ask {
-    background-color: var(--bg-ask) !important;
+.color-text {
+    color: var(--color-gray) !important;
+    font-size: 14px !important;
 }
 
+.color-text-p {
+    color: var(--color-gray) !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border-color: var(--color-red) !important;
+}
+
+.btn-margin {
+    margin: auto;
+}
+
+
+/* formulario  :el control del formulario diseños de las casillas para que tengan un sombreado rojo */
+
+
+.form-control:focus {
+    box-shadow: none !important;
+}
 
 /* ************************ section footer ******************************** */
 
@@ -792,10 +915,120 @@ header {
         color: var(--color-5);
     }
 
-    /* ******************** sectio odoo ************************ */
+    /* ******************** section odoo ************************ */
 
     .section-odoo {
         padding: 0 0 2.5rem 0 !important;
+    }
+
+    /* formulario - Griselda */
+
+    .container-icon {
+        display: flex;
+    }
+
+    .icons {
+        width: auto;
+        padding: 0 2.5rem;
+        margin: auto;
+        display: flex;
+        justify-content: start;
+    }
+
+    .t-icon {
+        color: var(--color-black);
+    }
+
+
+    .form-vertical {
+        width: 100%;
+
+    }
+
+    .form-horizontal {
+        font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        width: 100%;
+
+
+    }
+
+
+    .Yourname {
+        width: 47%;
+        margin-bottom: 2%;
+
+    }
+
+    .Youremail {
+        width: 47%;
+        margin-bottom: 2%;
+    }
+
+    .Yourphone {
+        margin-top: 2%;
+    }
+
+    .icons {
+        padding: 0;
+        margin: auto;
+        display: flex;
+        justify-content: start;
+    }
+
+    .nam-ema {
+        flex-direction: column;
+    }
+
+    .p-i {
+        padding: .50rem 0 !important;
+    }
+
+    .color-input {
+        color: var(--color-black) !important;
+    }
+
+    .color-text {
+        color: var(--color-gray) !important;
+    }
+
+    .color-text-p {
+        color: var(--color-gray) !important;
+    }
+
+    .form-control:focus {
+        border-color: var(--color-red) !important;
+    }
+
+    @media (max-width:580px) {
+        .icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    /* formulario  :el control del formulario diseños de las casillas para que tengan un sombreado rojo */
+
+
+    .form-control:focus {
+        box-shadow: none !important;
+    }
+
+    .Contenedor {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center center;
+    }
+
+    .section-touch {
+        max-width: 1000px;
+
     }
 
     /* ******************* section footer ************************** */
@@ -895,12 +1128,6 @@ header {
         bottom: 4rem !important;
     }
 
-    /* ******************** section services ***************** */
-    .services-container{
-        max-width: 1000px;
-        margin: auto;
-    }
-
     /********************** section busines ********************* */
     .main-busines {
         flex-direction: row;
@@ -960,25 +1187,105 @@ header {
         margin: 7px 0 0 7px;
     }
 
-    /********************** Section of logo ********************* */
 
-    /* .celda {
-        background-color: transparent;
-        box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
-        -webkit-box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
-        -moz-box-shadow: 0px 0px 11px -1px rgba(71, 71, 71, 0.51);
-        overflow: hidden;
-        height: 45px;
-        margin: 4px;
-        transition: all .1.5s ease;
+    /* *******************formulario - Griselda **********/
+    .container-form {
+        flex-direction: row;
     }
 
-    .efecto:hover {
-        border-bottom: 3px solid rgba(165, 165, 165, 0.535);
-        cursor: pointer;
-    } */
+    .title-forany {
+        text-align: start;
+    }
+
+    .container-icon {
+        flex-direction: column;
+        justify-content: start;
+
+    }
+
+    .form-vertical {
+        width: 60%;
+
+    }
+
+    .form-horizontal {
+        width: 100%;
 
 
+    }
+
+    .icons {
+        margin: 0;
+        justify-content: start;
+    }
+
+
+
+    .Yourname {
+        width: 47%;
+        margin-bottom: 2%;
+
+    }
+
+    .Youremail {
+        width: 47%;
+        margin-bottom: 2%;
+    }
+
+    .Yourphone {
+        margin-top: 2%;
+    }
+
+    .iconos {
+        width: 69%;
+    }
+
+    .nam-ema {
+        flex-direction: row;
+    }
+
+    .color-input {
+        color: var(--color-black) !important;
+    }
+
+    .color-text {
+        color: var(--color-gray) !important;
+    }
+
+    .color-text-p {
+        color: var(--color-gray) !important;
+    }
+
+    .form-control:focus {
+        border-color: var(--color-red) !important;
+    }
+
+    .btn-margin {
+        margin: 0;
+    }
+
+
+    /* formulario  :el control del formulario diseños de las casillas para que tengan un sombreado rojo */
+
+
+    .form-control:focus {
+        box-shadow: none !important;
+    }
+
+    .Contenedor {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center center;
+    }
+
+    .section-touch {
+        max-width: 1000px;
+
+    }
 
 
 
@@ -1028,27 +1335,4 @@ header {
     }
 
 
-}
-
-
-
-
-
-/* Service */
-.icon-service {
-    --box-size: 70px;
-    width: var(--box-size);
-    height: var(--box-size);
-    padding: 10px;
-}
-
-.prube {
-    width: 100px;
-    background-color: aqua;
-    cursor: pointer;
-}
-
-.prube::after {
-
-    border: 2px solid #ffff;
 }
