@@ -395,7 +395,7 @@ header {
 }
 
 .feature-box-1:hover p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .feature-box-1:hover:after {
