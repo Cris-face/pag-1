@@ -29,6 +29,7 @@
     --color-odoo-bg: rgb(247, 247, 247);
     --color-bg-footer: rgb(0, 27, 72);
     --color-services: rgb(255, 255, 255);
+    --color-card:  rgb(247, 247, 247);
 
     --btn-mode-color: rgb(6, 6, 6);
     --btn-color: rgb(0, 27, 72);
@@ -58,6 +59,7 @@
     --color-bg-footer: rgb(6, 6, 6);
     --color-services: rgb(15, 15, 15);
     --color-logo: rgb(35, 35, 35);
+    --color-card:  rgb(35, 35, 35);
 
     --btn-mode-color: rgb(9, 3, 174);
     --btn-color: rgb(25, 25, 25);
@@ -104,7 +106,7 @@
 .paragraph{
     font-size: 16px;
     font-weight: 400;
-    color: var(--color-gray);
+    color: var(--color-gray) !important;
 }
 
 .btn-treming {
@@ -293,11 +295,17 @@ header {
 
 .carousel-caption {
     bottom: 4rem !important;
+    right: 0 !important;
+    left: 0 !important;
 }
 
 
 .gold-partner {
     width: 150px;
+}
+
+.cert-odoo{
+    width: 70px;
 }
 
 .carousel-indicators .active {
@@ -432,7 +440,7 @@ header {
 }
 
 .card {
-    background-color: var(--color-6) !important;
+    background-color: var(--color-card) !important;
     border-color: var(--color-2) !important;
 }
 
@@ -538,6 +546,33 @@ header {
 .logo-row {
     --bs-gutter-x: 0 !important;
     margin-top: .5rem !important;
+}
+
+/* ***********************Section of what our client say************************ */
+
+.carousel-i {
+    width: 100%;
+}
+
+
+.indicator-position{
+    bottom: -50px !important;
+}
+
+.p-testimonial{
+     font-size: 14px;
+}
+
+.circle{
+    width: 80px;
+    border: 3px solid var(--color-red);
+    border-radius: 50%;
+
+}
+
+.quote{
+    width: 25px;
+    border-radius: 50%;
 }
 
 
@@ -1148,6 +1183,10 @@ header {
     .p-busines {
         display: block;
         text-align: start;
+    }
+
+    .p-busines-b{
+        display: none !important;
     }
 
     .box-container {
